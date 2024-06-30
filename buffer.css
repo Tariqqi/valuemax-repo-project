@@ -1,0 +1,221 @@
+/* -----------------------------------------------------------
+ Hello there, welcome to the CSS page, don't forget to refrence 
+ when using the code, have a good one , Juwon - cares :)
+ --------------------------------------------------------- */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Arial", sans-serif;
+  background: url("./img/page-background.png") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.navbar-brand img {
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.1);
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.nav-link {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #555;
+}
+
+.container {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  width: 400px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  transition: all 0.3s ease;
+  margin-top: 120px; /* Adjust to ensure caveat visibility to your own style */
+}
+
+.logo {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.1); /* This makes the logo larger by 10% on hovering unto the logo*/
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.container h1 {
+  font-size: 24px;
+  margin: 15px 0 10px;
+  text-align: left;
+  color: #333;
+  font-weight: bold;
+}
+
+.container p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #666;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.input-container label {
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+  font-weight: bold;
+}
+
+.input-container input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #fff;
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* This style is for on clicking on the input 
+it should take this style attribute*/
+
+.input-container input[type="email"]:focus {
+  border-color: #999;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.container button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  color: #666;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.container button:hover {
+  background-color: #ccc;
+  transform: translateY(-2px);
+}
+
+.container a {
+  display: block;
+  margin-top: 10px;
+  color: #666;
+  text-decoration: none;
+  text-align: left;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.container a:hover {
+  color: #333;
+}
+
+.alert {
+  font-size: 14px;
+  text-align: center;
+  font-size: 16px;
+  width: 90%;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  border-radius: 5px;
+  color: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Responsiveness */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .container {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    margin-top: 140px; /* Adjust to ensure caveat visibility  on mobile :)*/
+  }
+
+  .container h1 {
+    font-size: 20px;
+  }
+
+  .container p {
+    font-size: 12px;
+  }
+
+  .input-container input[type="email"] {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .container button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .container a {
+    font-size: 12px;
+  }
+}
