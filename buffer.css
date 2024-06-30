@@ -14,7 +14,6 @@ html {
   background: url("./img/page-background.png") no-repeat center center fixed;
   background-size: cover;
   display: flex;
-  overflow: hidden;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
@@ -185,6 +184,9 @@ it should take this style attribute*/
 /* Mobile Responsiveness */
 
 @media (max-width: 768px) {
+ body, html {
+  overflow: hidden;
+ }
   .navbar {
     padding: 10px 15px;
   }
